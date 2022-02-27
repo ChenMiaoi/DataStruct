@@ -5,12 +5,11 @@
 
 #define NUM 51
 
-extern const char* BOLD;
-extern const char* RESET;
-
-extern void ListMenu();
+extern void ListTITLE();
 extern void ListManual();
+extern void ListMenu();
 extern void proc();
+extern void Api_Manual();
 
 #endif // !__SRC__H__
 

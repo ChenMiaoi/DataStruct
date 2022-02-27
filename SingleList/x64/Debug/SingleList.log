@@ -1,2 +1,3 @@
 ﻿  src.c
+D:\GitHubWork\DataStruct\SingleList\src.c(27,1): warning C4129: “ ”: 不可识别的字符转义序列
   SingleList.vcxproj -> D:\GitHubWork\DataStruct\SingleList\x64\Debug\SingleList.exe

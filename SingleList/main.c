@@ -4,24 +4,34 @@
 void Loding()
 {
 	char option1 = 0;
-	ListMenu();
+	ListTITLE();
 	Sleep(1);
-	printf("Start Loading...\n");
+	printf("%sStart Loading...%s\n", FRONT_GREEN, RESET);
 	proc();
-	printf("Loading Have Done!\n");
-	printf(" - If you are using the program for the first time, you should type (y / Y) to get the basics\n");
-	printf(" - If not, type (n / N) to enter the program directly\n");
+	printf("%sLoading Have Done!%s\n", FRONT_GREEN, RESET);
+	printf(" - If you are using the program for the first time, you should type %s(y / Y)%s to get the basics\n", FRONT_GREEN, RESET);
+	printf(" - If not, type %s(n / N)%s to enter the program directly\n", FRONT_RED, RESET);
 	printf("Please Enter Your Option:> ");
 	int key = scanf("%c", &option1);
 	char ch = getchar();
 	if (option1 == 'y' || option1 == 'Y')
 	{
-		printf("Now, press any key to enter the manual\n\n");
+		printf("Now, press any key to enter the manual\n\n\n\n\n\n\n\n\n\n");
 		system("pause");
 		system("cls");
 		ListManual();
-		printf("\t1.该程序的确认是ENTER键，也就是回车键，没有撤销！！！因此请谨慎输入！\n");
+		printf("\t1.该程序的确认是%sENTER%s键，也就是回车键，%s没有撤销！！！因此请谨慎输入！%s\n", FRONT_YELLOW, RESET, FRONT_RED, RESET);
+		printf("\t2.该程序有九个入口，输入对应的数字以进入程序\n");
+		printf("\t---------------------------------------------------------------------\n");
+		Api_Manual();
+		system("pause");
 	}
+	system("cls");
+	ListMenu();
+	/*printf("%sStart Loading...%s\n", FRONT_GREEN, RESET);
+	proc();
+	printf("%sLoading Have Done!%s\n", FRONT_GREEN, RESET);*/
+	//ListTITLE();
 }
 
 int main()
