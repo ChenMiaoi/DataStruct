@@ -78,3 +78,22 @@ int TreeLeafSize(BTNode* root)
 	return TreeLeafSize(root->_left)
 		+ TreeLeafSize(root->_right);
 }
+
+//层序遍历 -- 非递归 -- 广度优先遍历
+void LevelOrder(BTNode* root)
+{
+	queue<BTNode> q;
+	if (root)
+		q.push(root);
+	while (!q.empty())
+	{
+		BTNode* front = q.front();
+		q.pop();
+		printf("%c ", front->data);
+		if (front->_left)
+			q.push(front->_left);
+		if (front->_right)
+			q.push(front->_right);
+	}
+	printf("\n");
+}

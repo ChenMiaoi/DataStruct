@@ -11,6 +11,7 @@ typedef struct BinaryTreeNode
 	BTData data;
 }BTNode;
 
+//前中后序 -- 深度优先遍历
 //前序 -- 先根遍历
 extern void PrevOrder(BTNode* root);
 
@@ -25,3 +26,7 @@ int TreeSize(BTNode* root);
 
 //叶子节点
 int TreeLeafSize(BTNode* root);
+
+//层序遍历 -- 非递归 -- 广度优先遍历
+//借助队列的先进先出
+void LevelOrder(BTNode* root);
