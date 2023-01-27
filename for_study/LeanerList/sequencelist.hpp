@@ -1,0 +1,8 @@
+//
+// Created by Chenmiaoi on 2023/1/27.
+//
+
+#ifndef LEANERLIST_SEQUENCELIST_HPP
+#define LEANERLIST_SEQUENCELIST_HPP
+
+#endif //LEANERLIST_SEQUENCELIST_HPP
