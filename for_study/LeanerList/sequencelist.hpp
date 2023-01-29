@@ -274,7 +274,7 @@ namespace sl {
          * 分析：
          *      查找用二分，插入直接插入
          * */
-         auto work9(elemType data) -> void {
+         auto work9(elemType data) -> void { // BUG
              int left = 0, right = size() - 1, mid = 0;
              while (left <= right) {
                  mid = (left + right) / 2;
